@@ -1,7 +1,7 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
-// https://github.com/microsoft/vscode-dev-containers/tree/v0.217.1/containers/azure-functions-dotnet-6-inprocess
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.217.1/containers/azure-functions-python-3
 {
-	"name": "Azure Functions & C# - .NET 6 (In-Process)",
+	"name": "Azure Functions & Python 3",
 	"dockerFile": "Dockerfile",
 	"forwardPorts": [ 7071 ],
 
@@ -11,11 +11,12 @@
 	// Add the IDs of extensions you want installed when the container is created.
 	"extensions": [
 		"ms-azuretools.vscode-azurefunctions",
-		"ms-dotnettools.csharp"
+		"ms-azuretools.vscode-docker",
+		"ms-python.python"
 	],
-
+	
 	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "dotnet restore",
+	// "postCreateCommand": "npm install",
 
 	// Comment out to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
 	"remoteUser": "vscode"
